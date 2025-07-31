@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fake Review Detector</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        padding: 10px;
+      }
+      input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .result {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .fake {
+        background-color: #f44336;
+        color: white;
+      }
+      .genuine {
+        background-color: #4CAF50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Fake Review Detector</h2>
+    <textarea id="reviewText" rows="4" placeholder="Enter the product review..."></textarea>
+    <button id="checkReview">Check Review</button>
+    <div id="result" class="result"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
